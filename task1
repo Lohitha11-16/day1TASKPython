@@ -1,0 +1,274 @@
+
+#1
+age =  int(input("Enter employee age: "))
+salary = int(input("Enter employee salary: "))
+if age > 21 & salary > 30000:
+    print("employee age and salary is above 21 and 30000")
+else:
+    print("not above 21 and 30000")
+
+#2
+a = int(input("enter a: "))
+b = int(input("enter b: "))
+passing_marks = 35
+
+if (a > passing_marks) & (b > passing_marks):
+    print("student passed ")
+else:
+    print("student failed")
+
+#3
+
+min_var = 10
+max_var = 100
+n = int(input("emnter n value: "))
+if n > min_var and n < max_var:
+    print(f"{n} is between {min_var} and {max_var}")
+else:
+    print("not pressent in between them: ")
+
+#4
+
+user_name = "lohi"
+pass_word = "sowji"
+
+username = str(input("enter username: "))
+password = str(input("enter password: "))
+
+if username == user_name and password == pass_word:
+    print("username and password is correct")
+else:
+    print("error")
+
+
+#5
+
+low_limit = float(input("enter low limit temperature : "))
+upper_limit = float(input("enter upper limit temperature: "))
+temp = float(input("enter temperature: "))
+
+if temp > low_limit and temp < upper_limit:
+    print(f"Temperature is in safe range: {temp}")
+else:
+    print("temperature is not in safe range")
+
+#6
+
+n1 = int(input("enter value1: "))
+n2 = int(input("enter value2: "))
+
+if n1 % 2 == 0 & n2 % 2 == 0:
+    print (f"Both values are positive even numbers {n1} and {n2}")
+else:
+    print("not even numbers")
+
+#7
+
+p1 = int(input("enter p1: "))
+p2 = int(input("enter p2: "))
+
+if p1 > 0 & p2 > 0:
+    print(f"Both {p1} and {p2} are positive numbers ")
+else:
+    print("not positive number")
+
+#8
+
+age = int(input("enter age: "))
+license = input("do you have driving license (yes/no): ")
+
+if age > 18 and license == "yes":
+    print("you are eligible to drive") 
+else:
+    print("not eligible")
+
+#9
+total_days = int(input("enter total days: "))
+progress = int(input("enter progress percentage: "))
+remaining_days = int(input("enter remaining days: "))
+
+passed_days = total_days - remaining_days
+progress_1 = (passed_days / total_days) * 100
+print(progress_1)
+
+if progress >= progress_1:
+    print("project on track for deadline")
+else:
+    print("Project is beyond the deadline")
+
+#10
+s_marks = int(input("enter student marks: "))
+s_attendance = int(input("enter students attendance percentage: "))
+min_marks = 40
+min_attendance = 75
+
+if s_marks > min_marks and s_attendance > min_attendance:
+    print("Student is eligible")
+else:
+    print("student not eligible")
+
+#11
+
+role1 = input("enter role1: ")
+if role1 == "admin" or role1 == "manager":
+    print("access granted")
+else:
+    print("access denied")
+
+#12
+
+sci = int(input("enter science marks: "))
+maths = int(input("enter maths marks: "))
+distinction_marks = int(input("enter distinction marks: "))
+if sci > distinction_marks or maths > distinction_marks:
+    print("student got distinction in both or one subject")
+else:
+    print("student did not get distinction in both subject")
+
+#13
+
+weekend = input("enter day of the week: ")
+if weekend == "saturday" or weekend == "sunday":
+    print("it is a weekend")
+else:
+    print("it is not a weekend")
+
+#14
+
+category = input("enter category: ")
+
+if category  == 'shirts' or category == 'jeans':
+    print(f"{category} is a valid category")
+else:
+    print(f"{category} is not a valid category")
+
+#15
+
+salary = int(input("enter salary: "))
+experience = int(input("enter experience: "))
+if salary > 50000 or experience > 5:
+    print("employee satisfied the requirements")
+else:
+    print("employee does not satisfied the requirements")
+
+#16
+
+temperature = float(input("enter temperature: "))
+low_limit = float(input("enter low limit: "))
+upper_limit = float(input("enter upper limit: "))
+if temperature < low_limit or temperature > upper_limit:
+    print("temperature is out of safe range")
+else:
+    print("temperature is in safe range")
+
+#17
+
+user1 = input("enter user1: ")
+user2 = input("enter user2: ")
+user3 = input("enter user3: ")
+if user1 == "lucky" or user2 == "sowji" or user3 == "lohi":
+    print("atleast one user is correct")
+else:
+    print("none of the users are correct")
+
+#18
+
+choice = input("enter your choice: ")
+if choice == 'a' or choice == 'e':
+    print("selected option belongs to given choice ")
+else:
+    print("selected option does not belong to given choice")
+
+#19
+
+str = input("enter a city name: ")
+str1 = input("enter another city name: ")
+if str == "vizag" or str1== "bangalore":
+    print("entered city matched allowed cities")
+else:
+    print("entered city does not matched allowed cities")
+
+#20
+
+n1 = 30
+n2 = 20
+n3 = 40
+
+if n3 > n1 or n3 >n2:
+    print("entered value matched the values")
+else:
+    print("not matched")
+
+#21
+
+user = "editor"
+if user != "admin":
+    print("access denied")
+else:
+    print("access granted")
+    
+#22
+number = int(input("enter a number:"))
+if(number <= 0):
+    print("the number is not positive")
+else:
+    print("number is positive")
+
+
+#23.
+value = input("enter a value:")
+if value.strip() != "":
+    print("the value is not empty ")
+else:
+    print("the value is empty")
+
+#24
+
+file_name = input("enter the file name:")
+if file_name.strip() != "":
+    print("the file is available")
+else:
+    print("the file is not available")
+
+#25
+employee_status = input("enter employee status (active/inactive):")
+if employee_status.lower() != "active":
+    print("the employee is not active")
+else:
+    print("the employee is active")
+    
+#26
+project_status = input("enter project status (completed/in progress):")
+if project_status.lower() != "completed":
+    print("the project is not completed")
+else:
+    print("the project is completed")
+    
+#27
+password = input("enter your password:")
+if password != "1234":
+        print(" password is not correct")
+else:
+    print("password is correct")
+    
+#28
+temperature = int(input("enter the temperature:"))
+if temperature != 0 and temperature != 100:
+    print("the temperature is  safe")
+else:
+    print("the temperature is not safe")
+    
+#29
+option = input("enter an option :")
+if option.upper() != "A" and option.upper() != "B" and option.upper() != "C":
+    print("the option is not allowed")
+else:
+    print("the option is allowed")
+    
+#30
+
+marks = int(input("enter your marks:"))
+if marks != 35:
+    print("the marks are not passing marks")
+else:
+    print("the marks are passing marks")
