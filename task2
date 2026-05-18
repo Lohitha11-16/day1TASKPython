@@ -1,0 +1,210 @@
+#1
+
+age = int(input("enter age: "))
+exp = int(input("enter experience: "))
+salary = int(input("enter Salary: "))
+if age > 21 and exp > 3 and salary > 30000:
+    print("eligioble for promotion")
+else:
+    print("not eligible")
+#2
+
+ds = int(input("enter Data Structure Marks: "))
+os = int(input("enter Operating System Marks: "))
+cd = int(input("enter Compiler design Marks: "))
+if ds > 75 and os > 765 and cd > 75:
+    print("Distinction")
+elif ds >= 35 and os >= 35 and cd >= 35:
+    print("Pass")
+else:
+    print("fail")
+
+#3
+
+user = [ "admin", "editor", "video", "trainer"]
+passw = ["lohi", "sowji", "lucky", "hai"]
+otp = [1234, 123, 12, 1]
+username = input("enter username: ")
+password = input("enter passw: ")
+otpn = int(input("enter otp: "))
+
+if username in user and password in passw and otpn in otp:
+    print("login Successful")
+else:
+    print("invalid credentials")
+
+#4
+
+speed = int(input("enter speed: "))
+data = int(input("enter data usage: "))
+remaining_days = int(input("enter remaining days: "))
+if speed > 100 and data > 500 and remaining_days > 20:
+    print("Premium Plan")
+elif speed > 50 and data > 200:
+    print("Standard plan")
+else:
+    print("Basic Plan")
+
+#5
+
+degree_availability = input("enter degree availability (yes/no): ")
+experience = int(input("enter experience in years: "))
+age = int(input("enter age: "))
+if degree_availability == "yes" and experience >= 2 and age > 21:
+    print("eligible for interview")
+else:
+    print("not eligible")
+
+#6
+ticket_availability = input("do you have a valid ticket? (yes/no):")
+passport_availability = input("do you have a valid passport? (yes/no):")
+luggage_weight = float(input("enter your luggage weight in kg:"))
+if ticket_availability.lower() == "yes" and passport_availability.lower() == "yes" and luggage_weight <= 20:
+    print("you are eligible for flight boarding")
+else:
+    print("you are not eligible for flight boarding")
+    
+#7.
+marks = int(input("enter your marks:"))
+family_income = float(input("enter your family income in lakhs:"))
+attendance = float(input("enter your attendance percentage:"))
+if marks >= 85 and attendance >= 90 and family_income <= 300000:
+    print("you are eligible for the scholarship")
+else:
+    print("you are not eligible for the scholarship")
+    
+#8. 
+pin = int(input("enter your pin:"))
+face_detection_status = input("is face detection available? (yes/no):")
+fingerprint_status = input("is fingerprint recognition available? (yes/no):")
+if pin == 1234 or face_detection_status.lower()== "yes" or fingerprint_status.lower() == "yes":
+    print("unlocked ")
+else:
+    print("locked")
+    
+#9.
+number_of_rooms = int(input("enter the number of rooms:"))
+number_of_days = int(input("enter the number of days for stay:"))
+budget = int(input("enter your budget in dollars:"))
+if number_of_rooms >= 2 and number_of_days >= 3 and budget >= 500:
+    print("luxury booking")
+elif number_of_rooms >= 1 and number_of_days >= 2 and budget >= 200:
+    print("standard booking")
+else:
+    print("budget booking")
+    
+#10. 
+subject1_marks = int(input("enter your marks in subject 1:"))
+subject2_marks = int(input("enter your marks in subject 2:"))
+subject3_marks = int(input("enter your marks in subject 3:"))
+total_marks = subject1_marks + subject2_marks + subject3_marks
+if total_marks >= 270:
+    print("TOPPER")
+elif total_marks >= 180:
+    print("AVG")
+else:
+    print("NEEDS IMPROVEMENT")
+    
+#11.
+age = int(input("enter your age:"))
+weight = float(input("enter your weight in kg:"))
+height = float(input("enter your height in cm:"))
+if age >= 18 and weight >= 50 and height >= 150:
+    print("fitness category a ")
+elif age >= 16 and weight >= 40 and height >=140:
+    print("fitness category b")
+else:
+    print("fitness category c")
+    
+#12.
+helmet_status = input("do you have a helmet? (yes/no):")
+license_status = input("do you have a valid license? (yes/no):")
+speed = int(input("enter your speed in km/h:"))
+if helmet_status.lower() == "yes" and license_status.lower() == "yes" and speed <= 80:
+    print("no fine")
+elif helmet_status.lower() == "no" and license_status.lower() == "yes" and speed >80:
+    print("heavy fine")
+else:
+    print("moderate fine")
+    
+#13. 
+age = int(input("enter your age:"))
+day = input("enter the day of the week:")
+membership_availbility = input("do you have a membership card? (yes/no):")
+if age<18 and day.lower()=="sunday" and membership_availbility.lower() == "yes":
+    print("50% discount")
+elif  membership_availbility.lower() == "yes":
+    print("25% discount")
+else:
+    print("no discount")
+
+#14.
+temperature =   int(input("enter the temperature in degree Celsius:"))
+wind_speed = int(input("enter the wind speed in km/h:"))
+rain_status = input("is it raining? (yes/no):")
+if temperature> 40 and wind_speed > 50 and rain_status.lower () =="no":
+    print("heat alert")
+elif wind_speed > 30 and rain_status.lower() == "yes":
+    print("storm alert")
+else:
+    print("normal weather")
+    
+#15.
+purchase_amount = float(input("enter your purchase amount in dollars:"))
+coupon_availbility = input("do you have a coupon code? (yes/no):")
+membership_status = input("are you a member of the loyalty program? (yes/no):")
+if purchase_amount >= 10000 and coupon_availbility.lower() == "yes" and membership_status.lower() == "yes":
+    print("maximum discount")
+elif purchase_amount >= 5000 and coupon_availbility.lower() == "yes":
+    print("medium discount")
+else:
+    print("no discount")
+
+#16.
+idcard_status       = input("do you have a valid ID card? (yes/no):")
+fingerprint_status  = input("is fingerprint recognition available? (yes/no):")
+access_level = int(input("enter your access level (1-10):"))
+if idcard_status.lower() == "yes" and fingerprint_status.lower() == "yes" and access_level > 5:
+    print("access granted")
+else:
+    print("access restricted")
+    
+#17.
+speed_score = int(input("enter your speed score:"))
+fitness_score =     int(input("enter your fitness score:"))
+discipline_score = int(input("enter your discipline score:"))
+if speed_score >= 80 and fitness_score >= 80 and discipline_score >= 80:
+    print("selected")
+elif speed_score >= 60 and fitness_score >= 60 and discipline_score >= 60:
+    print("waiting list")
+else:
+    print("not selected")
+
+#18. 
+budget = float(input("enter your budget in dollars:"))
+storage =   int (input("enter your storage requirement in GB:"))
+ram = int(input("enter the required RAM in GB:"))       
+if ( budget >= 100000 and ram>= 16 and storage >= 512):
+    print("gaming laptop")
+elif (budget >= 50000 and ram >= 8 and storage >= 256):
+    print("office laptop")
+else:
+    print("basic laptop")
+    
+#19. 
+# salary =    int(input("enter your salary:"))
+credit_score =  int(input("enter your credit score:"))
+experiance  = int(input("enter your years of experience:"))
+if salary >= 50000 and credit_score >= 750 and experiance >= 3:
+    print("loan approved")
+else : 
+    print("loan rejected")
+
+#20.
+door_status = input("is the door closed? (yes/no):")
+camera_status = input("is the security camera active? (yes/no):")
+alarm_status  = input("is the alarm system armed? (yes/no):")
+if door_status.lower() == "yes" and camera_status.lower() == "yes" and alarm_status.lower() == "yes":
+    print("home is secure")
+else:
+    print("home security compromised")
