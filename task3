@@ -1,0 +1,193 @@
+import random
+room_area = random.randint(15, 200)
+
+if room_area > 150 and room_area <= 200:
+    print("32 people allowed")
+elif room_area > 100 and room_area <=150:
+    print("24 people allowed")
+elif room_area > 50 and room_area <=100:
+    print("16 people allowed")
+else:
+    print("8 people allowed")
+
+
+for i in range(0,13):
+    if i in [2,6,10]:
+        print(i)
+
+line = 100
+point = 0
+while point <= 100:
+    print(point)
+    point += 4.5
+
+
+import random
+
+my_list = []
+
+i = 0
+while i < 10:
+    num1 = random.randint(1, 9)
+    num2 = random.randint(1, 9)
+
+    my_list.append([num1, num1, num2, num2])
+
+    i += 1
+
+print(my_list)
+
+#
+import math
+
+n = int(input("total number of people: "))
+k = int(input("committee: "))
+if k > n or k < 0:
+    print(0)
+else:
+    print(math.comb(n, k))
+
+#
+
+import math
+
+s_l = [[3, 4],[1, 1],[5, 12]]
+list = [0, 0]
+
+c_s = min(s_l, key = lambda sensor: math.dist(list, sensor))
+print(c_s)
+#
+import math
+
+result = math.copysign(5, -3)
+
+print(result)
+
+#
+import math
+
+point1 = [0, 0]
+point2 = [3, 4]
+
+distance = math.dist(point1, point2)
+
+print(distance)
+
+#
+import math
+
+result = math.erf(1)
+
+print(result)
+
+#
+import math
+
+result = math.erfc(1)
+
+print(result)
+
+#
+import math
+
+result = math.exp(2)
+
+print(result)
+
+#
+import math
+
+result = math.expm1(2)
+
+print(result)
+
+#
+import math
+
+result = math.fabs(-10.5)
+
+print(result)
+
+#
+import math
+
+result = math.factorial(5)
+
+print(result)
+#
+import math
+
+result = math.floor(4.8)
+
+print(result)
+#
+import math
+
+result = math.fmod(10, 3)
+
+print(result)
+
+#
+import math
+
+result = math.frexp(8)
+
+print(result)
+#
+import random
+
+print(random.random())
+
+#
+import random
+
+print(random.randint(1, 10))
+
+#
+import random
+
+print(random.randrange(1, 20, 2))
+
+#
+import random
+
+print(random.uniform(1.5, 5.5))
+
+#
+import random
+
+colors = ["Red", "Blue", "Green"]
+
+print(random.choice(colors))
+
+import copy
+
+print(copy.copy([1, 2, 3]))               
+print(copy.deepcopy([[1, 2], [3, 4]]))       
+
+original = [1, 2, 3]
+print(copy.copy(original))                   
+
+nested = [[1, 2], [3, 4]]
+print(copy.deepcopy(nested))               
+
+person = {"name": "Rajesh", "age": 30}
+print(copy.copy(person))                    
+
+employee = {
+    "name": "Rajesh",
+    "skills": ["Python", "Revit API"]
+}
+print(copy.deepcopy(employee))               
+
+number = 100
+print(copy.copy(number))                     
+
+text = "Hello Python"
+print(copy.copy(text))                       
+
+tuple_data = (1, 2, 3)
+print(copy.copy(tuple_data))                 
+
+set_data = {10, 20, 30}
+print(copy.copy(set_data))  
